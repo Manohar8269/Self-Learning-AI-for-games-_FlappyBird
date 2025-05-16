@@ -44,11 +44,6 @@ def draw_window(win, birds, pipes, base, score, gen):
     text = STAT_FONT.render("Alive: " + str(len(birds)), 1, (255, 255, 255))
     win.blit(text, (WIN_WIDTH - 90, 35))
 
-    if len(birds) > 0:
-        output = round(birds[0].last_output, 3) if hasattr(birds[0], "last_output") else 0
-        text = STAT_FONT.render(f"Output: {output}", 1, (255, 255, 255))
-        win.blit(text, (WIN_WIDTH - 120, 60))
-
     pygame.display.update()
 
 

@@ -47,13 +47,3 @@ if previous_mse is None or mse < previous_mse:
 else:
     print("⚠️ MSE did not improve. Model not overwritten.")
 
-# plt.figure(figsize=(10, 5))
-# plt.plot(y_test.values, label="Actual", alpha=0.7)
-# plt.plot(y_pred, label="Predicted", alpha=0.7)
-# plt.title("Actual vs Predicted Actions")
-# plt.xlabel("Sample Index")
-# plt.ylabel("Jump Probability")
-# plt.legend()
-# plt.grid(True)
-# plt.tight_layout()
-# plt.show()

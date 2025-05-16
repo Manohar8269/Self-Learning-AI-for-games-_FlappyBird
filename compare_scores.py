@@ -26,6 +26,5 @@ plt.title("AI vs Human Performance in Flappy Bird")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-
 plt.savefig("score_comparison.png")
 plt.show()
